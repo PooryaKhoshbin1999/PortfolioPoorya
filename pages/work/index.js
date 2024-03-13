@@ -19,7 +19,7 @@ const Work = () => {
       <div className="container mx-auto md:pt-[10rem]">
         <div className="flex flex-col xl:flex-row gap-x-8 ">
           {/* text */}
-          <div className="text-center mx-auto flex xl:w-[30vw] flex-col items-center xl:items-start lg:text-left mb-4 xl:mb-0">
+          <div className="text-center mx-auto flex xl:w-[30vw] flex-col items-center xl:items-start lg:text-left mb-4 xl:mb-0 pt-9">
             <motion.h2
               variants={fadeIn("up", 0.2)}
               initial="hidden"
@@ -35,7 +35,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0 md:text-[15px] text-center xl:text-left"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 md:text-[15px] text-center xl:text-left "
             >
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Corrupti, iure aliquid itaque ex corporis error libero velit

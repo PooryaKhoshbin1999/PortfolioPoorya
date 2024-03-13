@@ -1,5 +1,5 @@
 // next image
-import Image from "next/image";
+//import Image from "next/image";
 
 // next link
 import Link from "next/link";
@@ -13,8 +13,10 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-y-6 py-8">
           {/* logo */}
-          <Link href={'/'}>
-            <Image src={"/logo.svg"} width={220} height={48} alt="" priority={true} />
+          <Link href={"/"}>
+            <p className="text-white text-xl">
+              <span className="font-bold text-2xl">Poorya</span> Khoshbin <span className="text-accent text-3xl">.</span>
+            </p>
           </Link>
           {/* socials */}
           <Socials />

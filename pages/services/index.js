@@ -12,7 +12,7 @@ import { fadeIn } from "../../variants";
 
 const Services = () => {
   return (
-    <div className="h-full bg-primary/30 py-36 flex items-center hd:px-[6rem] fk:px-[20rem]">
+    <div className="h-full bg-primary/30 py-36 flex items-center hd:px-[6rem] fk:px-[20rem] pt-[200px] sm:pt-[250px]">
       {/* circle */}
       <Circles />
 

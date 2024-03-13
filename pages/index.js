@@ -14,12 +14,10 @@ import { fadeIn } from "../variants";
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full flex justify-center hd:px-[3rem] fk:px-[15rem] xl:px-0">
+    <div className="bg-primary h-full flex justify-center hd:px-[3rem] fk:px-[15rem] xl:px-0 pt-9 md:pt-0">
       {/* text */}
-      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-
+      <div className="w-full h-full bg-gradient-to-r from-primary via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
-
           {/* title */}
           <motion.h1
             className="h1 fk:text-[7rem]"
@@ -34,7 +32,7 @@ const Home = () => {
 
           {/* subtitle */}
           <motion.p
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 fk:text-[1.5rem]"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 fk:text-[1.5rem] text-secondary"
             variants={fadeIn("down", 0.3)}
             initial="hidden"
             animate="show"
@@ -59,14 +57,11 @@ const Home = () => {
           >
             <ProjectsBtn />
           </motion.div>
-
         </div>
-
       </div>
 
       {/* image */}
       <div className="w-full h-full absolute right-0 bottom-0 ">
-
         {/* bg image */}
         <div
           className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full  h-full
@@ -83,15 +78,13 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className=" fk:w-[1100px] lg:w-[600px] xl:w-[800px]  absolute -bottom-32 lg:bottom-0 
-        lg:right-[8%]"
+          className="lg:w-[450px] lg:h-[550px] fk:w-[900px] fk:h-[900px] absolute bottom-0 right-[10%]"
         >
           <Avatar />
         </motion.div>
-
       </div>
     </div>
   );
 };
-
+//fk:w-[1100px] lg:w-[600px] xl:w-[800px]  absolute -bottom-32 lg:bottom-0 lg:right-[8%]
 export default Home;
