@@ -1,25 +1,18 @@
 // testimonial data
 const testimonialData = [
   {
-    image: "/t-avt-1.png",
-    name: "Anne Smith",
+    image: "/hojjat.jpg",
+    name: "Mohammad Hojjat Mahdavi",
     position: "Customer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Working with Poorya Khoshbin has been a game-changer for my business. Their expertise and professionalism have helped us achieve remarkable results.",
   },
   {
-    image: "/t-avt-2.png",
-    name: "Jane Doe",
+    image: "/moheb.jpg",
+    name: "Mohebullah Yousofi",
     position: "Customer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
-  },
-  {
-    image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "I highly recommend Poorya Khoshbin for anyone seeking top-notch services. Their innovative solutions and commitment to excellence set them apart from the rest.",
   },
 ];
 
@@ -62,7 +55,13 @@ const TestimonialSlider = () => {
                 <div className="flex flex-col justify-center text-center">
                   {/* avatar */}
                   <div className="mb-2 mx-auto">
-                    <Image src={person.image} width={100} height={100} alt="" />
+                    <Image
+                      src={person.image}
+                      width={100}
+                      height={100}
+                      alt=""
+                      className="rounded-full"
+                    />
                   </div>
                   {/* name */}
                   <div className="text-lg">{person.name}</div>

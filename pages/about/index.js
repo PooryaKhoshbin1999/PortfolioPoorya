@@ -35,22 +35,8 @@ const aboutData = [
     ],
   },
   {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-      },
-    ],
-  },
-  {
     title: "experience",
     info: [
-      
       {
         title: "Web Developer - freelancing",
         stage: "2020 - 2024",
@@ -69,10 +55,10 @@ const aboutData = [
         stage: "2022",
       },
       {
-        title: "Bachelor fo Software Engineering at Computer Science faculty of Herat University",
+        title:
+          "Bachelor fo Software Engineering at Computer Science faculty of Herat University",
         stage: "2024",
       },
-      
     ],
   },
 ];
@@ -122,8 +108,9 @@ const About = () => {
             exit="hidden"
             className="h2 fk:text-[5rem]"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent designs.
+            Unveiling Creativities: <br /> Where{" "}
+            <span className="text-accent">Ideas</span> birth Blossom into
+            Brilliance.
           </motion.h2>
 
           <motion.p
@@ -133,9 +120,8 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] fk:text-[1.2rem] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-secondary"
           >
-            10 years ago, I began freelancing as a developer. since then, I have
-            done remote word for agencies, counsulted for startup, and
-            collaborated on digital products for business and consumer use.
+            4 years ago, I started working as a freelance developer. Since then,
+            I have worked remotely for web development companies
           </motion.p>
 
           {/* counters */}
@@ -165,7 +151,7 @@ const About = () => {
                 after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 hd:w-[110px]">
-                  <CountUp start={0} end={0} duration={5} /> +
+                  <CountUp start={0} end={3} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied clients
@@ -173,23 +159,13 @@ const About = () => {
               </div>
               {/* projects */}
               <div
-                className="relative flex-1 after:w-[1px] fk:after:w-[0px] after:h-full after:bg-white/10 after:absolute 
-                after:top-0 after:right-0"
+                className="relative flex-1 "
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 hd:w-[110px]">
-                  <CountUp start={0} end={0} duration={5} /> +
+                  <CountUp start={0} end={6} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished projects
-                </div>
-              </div>
-              {/* awards */}
-              <div className="relative flex-1">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 hd:w-[110px] ">
-                  <CountUp start={0} end={0} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  wining awards
                 </div>
               </div>
             </div>

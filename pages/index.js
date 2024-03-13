@@ -26,8 +26,8 @@ const Home = () => {
             animate="show"
             exit="hidden"
           >
-            Transformation Ideas <br /> Into
-            <span className="text-accent">Digital Reality</span>
+            From Concept to Code: <br /> Crafting
+            <span className="text-accent">Digital Realities</span>
           </motion.h1>
 
           {/* subtitle */}
@@ -38,9 +38,12 @@ const Home = () => {
             animate="show"
             exit="hidden"
           >
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
-            officiis repellendus earum similique iure rem. Corrupti aliquam
-            temporibus quidem ut?
+            We offer diverse digital services, crafting immersive experiences
+            through meticulous planning and innovative design. From software
+            development to virtual environments, we exceed expectations with
+            cutting-edge technology. Our focus on collaboration and client
+            satisfaction ensures impactful digital solutions that inspire and
+            engage audiences, leaving a lasting impression.
           </motion.p>
 
           {/* btn */}

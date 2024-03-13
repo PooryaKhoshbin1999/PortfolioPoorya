@@ -6,18 +6,22 @@ const workSlides = {
         {
           title: "title",
           path: "/thumb1.png",
+          link: "https://pooryakhoshbin1999.github.io/gpt3__jsm/"
         },
         {
           title: "title",
           path: "/thumb2.png",
+          link: "https://pooryakhoshbin1999.github.io/modern_bank_app/"
         },
         {
           title: "title",
           path: "/thumb3.png",
+          link: "https://pooryakhoshbin1999.github.io/gerich-restaurant/"
         },
         {
           title: "title",
           path: "/thumb4.png",
+          link: "https://pooryakhoshbin1999.github.io/60walleper/"
         },
       ],
     },
@@ -26,18 +30,22 @@ const workSlides = {
         {
           title: "title",
           path: "/thumb4.png",
+          link: "https://pooryakhoshbin1999.github.io/60walleper/"
         },
         {
           title: "title",
           path: "/thumb1.png",
+          link: "https://pooryakhoshbin1999.github.io/gpt3__jsm/"
         },
         {
           title: "title",
           path: "/thumb2.png",
+          link: "https://pooryakhoshbin1999.github.io/modern_bank_app/"
         },
         {
           title: "title",
           path: "/thumb3.png",
+          link: "https://pooryakhoshbin1999.github.io/gerich-restaurant/"
         },
       ],
     },
@@ -52,6 +60,9 @@ import { BsArrowRight } from "react-icons/bs";
 
 // image
 import Image from "next/image";
+
+//link
+import Link from "next/link";
 
 // import swiper style
 import "swiper/css";
@@ -77,7 +88,7 @@ const WorkSlider = () => {
             <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
               {slide.images.map((image, index) => {
                 return (
-                  <div
+                  <Link href={image.link}
                     key={index}
                     className="relative rounded-lg overflow-hidden flex 
                   items-center justify-center group"
@@ -107,7 +118,7 @@ const WorkSlider = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 );
               })}
             </div>

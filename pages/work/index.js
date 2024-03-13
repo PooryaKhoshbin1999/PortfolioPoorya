@@ -37,9 +37,11 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0 md:text-[15px] text-center xl:text-left "
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Corrupti, iure aliquid itaque ex corporis error libero velit
-              ipsum.
+              As a frontend developer, I specialize in translating design
+              concepts into captivating digital experiences. Through expert
+              coding and innovative design techniques, I craft user-friendly
+              interfaces that seamlessly merge aesthetics with functionality,
+              ensuring optimal engagement and usability.
             </motion.p>
           </div>
 
