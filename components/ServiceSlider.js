@@ -7,20 +7,25 @@ import {
   RxRocket,
   RxArrowTopRight,
 } from "react-icons/rx";
-import { IoServerOutline } from "react-icons/io5";
+
 // data
 const serviceData = [
- {
+  {
+    icon: <RxPencil2 />,
+    title: "Design",
+    description: "Best UX / UI designing",
+  },
+  {
     icon: <RxDesktop />,
     title: "Frontend Development",
     description: "Development of web-based software with modern UI technology.",
   },
   {
-    icon: <IoServerOutline/>,
-    title: "Backend Development",
-    description: "Development of web-base systems with modern backend technology"
-  }
-  
+    icon: <RxReader />,
+    title: "Copywriting",
+    description:
+      "Crafting compelling narratives that captivate, persuade, and inspire audiences effortlessly.",
+  },
 ];
 
 //import swiper react components
@@ -57,22 +62,29 @@ const ServiceSlider = () => {
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col
-            gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
-              {/* icons */}
-              <div className="tex-4xl text-accent mb-4">
-                {item.icon}</div>
+            <div
+              className="bg-[rgba(65,47,123,0.15)] rounded-lg px-6 py-8 flex sm:flex-col
+            gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 h-[250px] justify-between"
+            >
+              <div>
+                {/* icons */}
+                <div className="tex-4xl text-accent mb-4">{item.icon}</div>
 
-              {/* title & description */}
-              <div className="mb-8">
-                <div className="mb-2 text-lg">{item.title}</div>
-                <p className="max-w-[350px] leading-normal">{item.description}</p>
+                {/* title & description */}
+                <div className="mb-8">
+                  <div className="mb-2 text-lg">{item.title}</div>
+                  <p className="max-w-[350px] leading-normal">
+                    {item.description}
+                  </p>
+                </div>
               </div>
 
               {/* arrow */}
               <div className="text-3xl">
-                <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent 
-                transition-all duration-300" />
+                <RxArrowTopRight
+                  className="group-hover:rotate-45 group-hover:text-accent 
+                transition-all duration-300"
+                />
               </div>
             </div>
           </SwiperSlide>
