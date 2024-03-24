@@ -90,7 +90,7 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -right-[-75%] md:w-[700px] fk:w-[1250px] fk:-right-[-79%]"
+        className="hidden xl:flex absolute bottom-0 -right-[-75%] lg:w-[50%] lg:h-[90%] fk:w-[1250px] fk:-right-[-79%]"
       >
         <Avatar />
       </motion.div>
@@ -106,7 +106,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 fk:text-[5rem]"
+            className="h2 lg:text-[3rem] fk:text-[5rem]"
           >
             Unveiling Creativities: <br /> Where{" "}
             <span className="text-accent">Ideas</span> birth Blossom into
@@ -158,9 +158,7 @@ const About = () => {
                 </div>
               </div>
               {/* projects */}
-              <div
-                className="relative flex-1 "
-              >
+              <div className="relative flex-1 ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 hd:w-[110px]">
                   <CountUp start={0} end={6} duration={5} /> +
                 </div>

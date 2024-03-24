@@ -1,3 +1,5 @@
+"use client";
+
 //component
 import Circles from "../../components/Circles";
 
@@ -9,8 +11,39 @@ import { motion } from "framer-motion";
 
 // varients
 import { fadeIn } from "../../variants";
+import { useState } from "react";
+import { FormEvent } from "react";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const onSubmithandler = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        body: JSON.stringify({
+          name,
+          email,
+          subject,
+          message,
+        }),
+        headers: {
+          "content-type": "application/json",
+        },
+      });
+    } catch (e) {
+      console.error("error", e);
+    }
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+  };
+
   return (
     <div className="xl:h-full h-[600px] bg-primary/30 mt-9">
       <div
@@ -31,6 +64,7 @@ const Contact = () => {
           </motion.h2>
           {/* form */}
           <motion.form
+            onSubmit={onSubmithandler}
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             animate="show"
@@ -38,11 +72,34 @@ const Contact = () => {
           >
             {/* input group */}
             <div className="flex gap-x-1 xl:gap-x-6 w-full">
-              <input type="text" placeholder="name" className="input" />
-              <input type="email" placeholder="email" className="input" />
+              <input
+                type="text"
+                placeholder="name"
+                className="input"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <input
+                type="email"
+                placeholder="email"
+                className="input"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </div>
-            <input type="text" placeholder="subject" className="input" />
-            <textarea placeholder="message" className="textarea"></textarea>
+            <input
+              type="text"
+              placeholder="subject"
+              className="input"
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+            />
+            <textarea
+              placeholder="message"
+              className="textarea"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
             <button
               className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all
             duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
